@@ -26,5 +26,4 @@ fetch("data.json")
       span.textContent = data[i].score;
       let scores = new Array();
     }
-
   });

@@ -42,11 +42,30 @@ body {
     background: rgb(37,33,201);
     background: linear-gradient(0deg, rgba(37,33,201,0) 0%, rgba(77,33,201,1) 100%);
     margin: auto;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pastille > p:first-of-type {
+    font-weight: 800;
+    font-size: 4.875rem;
+    color: var(--white);
+    line-height: 4.5rem; /* VRAIMENT NECESSAIRE ???*/
+    margin:0;
+}
+
+#pastille > p:nth-of-type(2) {
+    color: var(--lightblue);
+    opacity: 0.52;
+    font-weight: 700;
+    line-height: 1.4656rem;
 }
 
 #center {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     height: 100%;
 }
 
@@ -146,7 +165,7 @@ h2 {
     padding: 1rem;
 }
 
-#rightcol>div>div>div>p:nth-of-type(2) {
+.greyparagraph {
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 1.4375rem;
